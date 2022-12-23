@@ -1,0 +1,203 @@
+@media screen and (min-width: 1200px) {
+    header img {
+        width: max-content;
+    }
+
+    .smakolik img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .smakolik {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(231, 231, 231);
+        border: 1px solid rgb(172, 171, 171);
+        border-radius: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .sweet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .smakolik h3 {
+        margin-top: 20px;
+        display: block;
+        color: rgb(0, 52, 241);
+    }
+
+    .smakolik h4 {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .smakolik:hover {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.107);
+    }
+
+    .section {
+        width: 300px;
+        background-color: rgb(231, 231, 231);
+        border: 1px solid rgb(172, 171, 171);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.107);
+        height: auto;
+        border-radius: 30px;
+    }
+
+    button {
+        background-color: rgb(231, 231, 231);
+    }
+
+
+    .sweet {
+        min-width: 950px;
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .range-controls {
+        margin-top: 10px;
+        position: relative;
+      }
+      
+      .range-controls .scale {
+        height: 2px;
+      
+        background: rgba(0, 0, 0, 0.267);
+      }
+      
+      .range-controls .bar {
+        width: 80%;
+        height: 2px;
+      
+        background: #ffffff;
+      }
+      
+      .range-toggle {
+        position: absolute;
+        top: 3px;
+      
+        width: 4px;
+        height: 4px;
+      
+        background: #b5b5b5;
+        border: 8px solid #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+        cursor: pointer;
+      }
+      
+      .range-toggle:hover {
+        background: #1c4f80;
+      }
+      
+      .range-toggle-min {
+        left: 0;
+        top: -9px;
+      }
+      
+      .range-toggle-max {
+        left: 80%;
+        top: -9px;
+      }
+
+      .section h3 {
+        display: block;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .section {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+}
+
+@media screen and (min-width:375px) and (max-width:730px){
+    .range-controls{
+        display: none;
+    }
+}
+
+@media screen and (min-width:730px) and (max-width:1199px) {
+    header img {
+        width: 550px;
+    }
+
+    .smakolik img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .smakolik {
+        width: 300px;
+        height: 200px;
+        background-color: rgb(231, 231, 231);
+        border: 1px solid rgb(172, 171, 171);
+        border-radius: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .sweet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .smakolik h3 {
+        margin-top: 20px;
+        display: block;
+        color: rgb(0, 52, 241);
+    }
+
+    .smakolik h4 {
+        display: block;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .range-controls {
+        display: none;
+    }
+}

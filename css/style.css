@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 340px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.smakolik {
+    border: 1px;
+    border-radius: 30px;
+}
+
+.smakolik h3, h4 {
+    display: none;
+}
+
+.smakolik img {
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.section h3 {
+    display: none;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox-btn {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	user-select: none;
+	position: relative;
+    margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.checkbox-btn span {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 5px;
+	line-height: 30px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 4px;
+	transition: background 0.2s ease;
+    width: 150px;
+    text-align: center;
+}
+
+button{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    height: 32px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.checkbox-btn:hover {
+	color: rgb(0, 0, 0);
+}
+
+input#filtr1:checked ~ .section > label[for="filtr1"]{
+    background-color: green;
+}
+input#filtr2:checked ~ .section > label[for="filtr2"]{
+    background-color: green;
+}
+input#filtr3:checked ~ .section > label[for="filtr3"]{
+    background-color: green;
+}
+input#filtr4:checked ~ .section > label[for="filtr4"]{
+    background-color: green;
+}
+
+input[type="checkbox"]:not(:checked) ~ .sweet .smakolik {
+    display: flex;
+}
+
+input[type="checkbox"]:checked ~ .sweet .smakolik {
+    display: none;
+}
+
+#filtr1:checked ~ .sweet .tistechko {
+    display: flex;
+}
+
+#filtr2:checked ~ .sweet .cake {
+    display: flex;
+}
+
+#filtr3:checked ~ .sweet .rullet {
+    display: flex;
+}
+
+#filtr4:checked ~ .sweet .syrnyky {
+    display: flex;
+}
+
+.range-controls {
+    position: relative;
+  
+    margin-bottom: 12px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+  
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
