@@ -1,0 +1,174 @@
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width:375px) and (max-width:730px){
+    .sweet h3, h4 {
+        display: none;
+    }
+
+    .tistechko, .cake, .syrnyky, .rullet {
+        background-color: white;
+    }
+
+    .sweet img {
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+    }
+
+    .cake:hover, .rullet:hover, .syrnyky:hover, .tistechko:hover {
+        box-shadow: 0px 0px 0px 0px white;
+    
+    }
+
+    header img {
+        margin-top: 20px;
+        width: 280px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .cake:hover, .rullet:hover, .syrnyky:hover, .tistechko:hover {
+        box-shadow: 0px;
+    }
+
+    main .sweet ~ h3 {
+        display: none;
+    }
+
+     main .section {
+        background-color: white;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    span {
+        display: contents;
+    }
+
+    .section h3, #viddo {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .checkbox-btn span {
+        display: inline-block;
+        cursor: pointer;
+        padding: 0px 10px;
+        line-height: 30px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        transition: background 0.2s ease;
+        width: 120px;
+        text-align: center;
+    }
+
+    .checkbox-btn:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    .section {
+        margin-top: -100px;
+    }
+
+    .sweet {
+        justify-content: center;
+    }
+    
+    input#filtr1:checked ~ .section {
+        margin-right: 0px;
+    }
+    
+    input#filtr3:checked ~ .section {
+        margin-right: 0px;
+    }
+    
+    input#filtr4:checked ~ .section {
+        margin-right: 0px;
+    }
+
+    input#filtr1:checked ~ .section > label[for="filtr1"]{
+        background-color: green;
+    }
+    input#filtr2:checked ~ .section > label[for="filtr2"]{
+        background-color: green;
+    }
+    input#filtr3:checked ~ .section > label[for="filtr3"]{
+        background-color: green;
+    }
+    input#filtr4:checked ~ .section > label[for="filtr4"]{
+        background-color: green;
+    }
+
+    button{
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+        height: 32px;
+    
+    }
+
+    .range-controls {
+        display: none;
+      }
+      
+      .range-controls .scale {
+        display: none;
+      }
+      
+      .range-controls .bar {
+        display: none;
+      }
+      
+      .range-toggle {
+        display: none;
+      }
+      
+      .range-toggle:hover {
+        display: none;
+      }
+      
+      .range-toggle-min {
+        display: none;
+      }
+      
+      .range-toggle-max {
+        display: none;
+      }
+
+}
+
+@media (min-width:730px) and (max-width:1199px) {
+    input#filtr1:checked ~ .section {
+        margin-right: -500px;
+    }
+    
+    input#filtr3:checked ~ .section {
+        margin-right: -20px;
+    }
+    
+    input#filtr4:checked ~ .section {
+        margin-right: -500px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
